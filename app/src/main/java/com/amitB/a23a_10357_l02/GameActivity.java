@@ -33,7 +33,6 @@ public class GameActivity extends AppCompatActivity {
 
         Score.setText(score + "");
         initViews();
-//        Glide.with(this).load("http://goo.gl/gEgYUd").into();
     }
 
     private void findViews() {
