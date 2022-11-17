@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".GameActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/game_IMG_FLAG"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/game_IMG_heart_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/game_IMG_heart_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/game_IMG_heart_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/game_IMG_heart_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/game_LBL_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="000"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="32sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingHorizontal="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_Btn_1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/yellow_300"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:textAllCaps="false"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_Btn_2"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/yellow_300"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_Btn_3"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/yellow_300"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:textAllCaps="false"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_Btn_4"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/yellow_300"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
